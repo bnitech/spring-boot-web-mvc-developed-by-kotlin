@@ -1,4 +1,4 @@
-# Kotlin으로 개발하는 Spring Boot Web MVC (Spr0ing Boot Web MVC developed by Kotlin)
+# Kotlin으로 개발하는 Spring Boot Web MVC (Spring Boot Web MVC developed by Kotlin)
 
 온라인 강좌: [Kotlin으로 개발하는 Spring Boot Web MVC](https://inf.run/rAQk)
 
