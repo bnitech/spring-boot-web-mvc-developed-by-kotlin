@@ -10,8 +10,11 @@ GET http://localhost:8080/api/get-mapping/path-variable/steve/22
 ### Get PathVariable 3
 GET http://localhost:8080/api/get-mapping/path-variable2/steve/22
 
-### Get PathVariable 3
+### Get QueryParam 1
 GET http://localhost:8080/api/get-mapping/query-param?name=steve&age=22
 
-### Get PathVariable 3
-GET http://localhost:8080/api/get-mapping/query-param/object?name=steve&age=22&emailsteve@gamil.com&address=address-
+### Get QueryParam 2
+GET http://localhost:8080/api/get-mapping/query-param/object?name=steve&age=22&email=steve@gamil.com&address=address-
+
+### Get QueryParam 3
+GET http://localhost:8080/api/get-mapping/query-param/map?name=steve&age=22&email=steve@gamil.com&address=address-&phone-number=01012341234

@@ -42,4 +42,10 @@ class GetApiController {
         return userRequest
     }
 
+    @GetMapping("/get-mapping/query-param/map")
+    fun queryParamMap(@RequestParam map: Map<String, Any>): Map<String, Any> {
+        println("map = [${map}]")
+        return map;
+    }
+
 }
