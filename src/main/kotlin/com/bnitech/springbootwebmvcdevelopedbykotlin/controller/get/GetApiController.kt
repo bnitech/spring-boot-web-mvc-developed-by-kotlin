@@ -1,5 +1,6 @@
 package com.bnitech.springbootwebmvcdevelopedbykotlin.controller.get
 
+import com.bnitech.springbootwebmvcdevelopedbykotlin.model.http.UserRequest
 import org.springframework.web.bind.annotation.*
 
 @RestController
@@ -34,4 +35,11 @@ class GetApiController {
         println("name = [${name}], age = [${age}]")
         return "$name $age"
     }
+
+    @GetMapping("/get-mapping/query-param/object")
+    fun queryParamObject(userRequest: UserRequest): UserRequest {
+        println("userRequest = [${userRequest}]")
+        return userRequest
+    }
+
 }
