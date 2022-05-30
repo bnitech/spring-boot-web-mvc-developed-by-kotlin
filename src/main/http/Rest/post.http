@@ -1,11 +1,22 @@
-### POST
+### POST Post Mapping
 POST http://localhost:8080/api/post-mapping
 
-### POST
+### POST Request Mapping
 POST http://localhost:8080/api/request-mapping
 Content-Type: application/json
 
 {
   "name": "steve",
   "age": 22
+}
+
+### POST Post mapping 1
+POST http://localhost:8080/api/post-mapping/object
+Content-Type: application/json
+
+{
+  "name": "steve",
+  "age": 22,
+  "email": "steve@gmail.com",
+  "address": "경기도 성남시"
 }
