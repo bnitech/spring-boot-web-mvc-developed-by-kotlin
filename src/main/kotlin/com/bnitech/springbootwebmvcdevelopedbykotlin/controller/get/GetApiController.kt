@@ -28,4 +28,10 @@ class GetApiController {
         println("name = [${_name}], age = [${age}]")
         return "$_name $age"
     }
+
+    @GetMapping("/get-mapping/query-param")
+    fun queryParam(@RequestParam name: String, @RequestParam(value = "age") age: Int): String {
+        println("name = [${name}], age = [${age}]")
+        return "$name $age"
+    }
 }
