@@ -1,2 +1,5 @@
 ### Get Api
 GET http://localhost:8080/api/hello
+
+### Get PathVariable
+GET http://localhost:8080/api/get-mapping/path-variable/steve
