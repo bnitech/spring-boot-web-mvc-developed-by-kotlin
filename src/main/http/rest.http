@@ -6,3 +6,6 @@ GET http://localhost:8080/api/get-mapping/path-variable/steve
 
 ### Get PathVariable 2
 GET http://localhost:8080/api/get-mapping/path-variable/steve/22
+
+### Get PathVariable 3
+GET http://localhost:8080/api/get-mapping/path-variable2/steve/22

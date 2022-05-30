@@ -21,4 +21,11 @@ class GetApiController {
         println("name = [${name}], age = [${age}]")
         return "$name $age"
     }
+
+    @GetMapping("/get-mapping/path-variable2/{name}/{age}")
+    fun pathVariable2(@PathVariable(value = "name") _name: String, @PathVariable(name = "age") age: Int): String {
+        val name = "kotlin"
+        println("name = [${_name}], age = [${age}]")
+        return "$_name $age"
+    }
 }
