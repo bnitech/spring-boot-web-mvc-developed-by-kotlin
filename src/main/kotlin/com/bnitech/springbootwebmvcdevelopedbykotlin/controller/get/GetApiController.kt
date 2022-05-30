@@ -16,9 +16,9 @@ class GetApiController {
         return "request-mapping"
     }
 
-    @GetMapping("/get-mapping/path-variable/{name}")
-    fun pathVariable(@PathVariable name: String): String {
-        println(name)
-        return name
+    @GetMapping("/get-mapping/path-variable/{name}/{age}")
+    fun pathVariable(@PathVariable name: String, @PathVariable age: Int): String {
+        println("name = [${name}], age = [${age}]")
+        return "$name $age"
     }
 }
