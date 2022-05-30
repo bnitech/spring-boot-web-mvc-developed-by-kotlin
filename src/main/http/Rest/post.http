@@ -21,7 +21,7 @@ Content-Type: application/json
   "address": "경기도 성남시"
 }
 
-### POST Post mapping 1
+### POST Post mapping 2
 POST http://localhost:8080/api/post-mapping/object
 Content-Type: application/json
 
