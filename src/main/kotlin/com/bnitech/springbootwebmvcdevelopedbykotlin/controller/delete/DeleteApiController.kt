@@ -1,9 +1,6 @@
 package com.bnitech.springbootwebmvcdevelopedbykotlin.controller.delete
 
-import org.springframework.web.bind.annotation.DeleteMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RequestParam
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api")
@@ -16,5 +13,14 @@ class DeleteApiController {
     ): String {
         println("name = [${name}], age = [${age}]")
         return "$name $age"
+    }
+
+    @DeleteMapping(path = ["/delete-mapping/path/name/{name}/age/{age}"])
+    fun deleteMappingPath(
+        @PathVariable(name = "name") _name: String,
+        @PathVariable(value = "age") _age: Int
+    ): String {
+        println("name = [${_name}], age = [${_age}]")
+        return "$_name $_age"
     }
 }

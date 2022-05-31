@@ -1,2 +1,5 @@
 ### DELETE Delete Mapping
 DELETE http://localhost:8080/api/delete-mapping?name=steve&age=22
+
+### DELETE Path Variable
+DELETE http://localhost:8080/api/delete-mapping/path/name/steve/age/22
