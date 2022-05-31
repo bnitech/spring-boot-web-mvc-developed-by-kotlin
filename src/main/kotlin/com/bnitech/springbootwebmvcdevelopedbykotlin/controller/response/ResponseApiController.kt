@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RestController
 class ResponseApiController {
 
     @GetMapping
-    fun getMapping(@RequestParam age: Int): String {
+    fun getMapping(@RequestParam age: Int?): String {
+        println("age = [${age}]")
         return "OK"
     }
 }
