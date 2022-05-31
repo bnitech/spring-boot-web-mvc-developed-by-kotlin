@@ -1,0 +1,2 @@
+### DELETE Delete Mapping
+DELETE http://localhost:8080/api/delete-mapping?name=steve&age=22
