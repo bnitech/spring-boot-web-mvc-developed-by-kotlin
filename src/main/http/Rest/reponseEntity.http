@@ -24,3 +24,6 @@ Content-Type: application/json
   "address": "경기도 성남시",
   "phone_number": "010-1234-1234"
 }
+
+### DELETE Response Entity
+DELETE http://localhost:8080/api/response/123

@@ -32,4 +32,9 @@ class ResponseApiController {
     fun putMapping(@RequestBody userRequest: UserRequest?): ResponseEntity<Any> {
         return ResponseEntity.status(HttpStatus.CREATED).body(userRequest)
     }
+
+    @DeleteMapping("/{id}")
+    fun deleteMapping(@PathVariable id: Int): ResponseEntity<Any> {
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null)
+    }
 }
