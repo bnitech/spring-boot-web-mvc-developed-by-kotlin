@@ -17,11 +17,11 @@
 - 섹션 2. 웹 개론 
     - [x] Web 개론 
 - 섹션 3. REST-API 
-    - [ ] GET 
-    - [ ] POST
-    - [ ] PUT 과 ObjectMapper
-    - [ ] DELETE
-    - [ ] ResponseEntity
+    - [x] GET 
+    - [x] POST
+    - [x] PUT 과 ObjectMapper
+    - [x] DELETE
+    - [x] ResponseEntity
 - 섹션 4. Spring Boot Validation
     - [ ] JSR-380 Bean Validation
     - [ ] Custom Validation Annotation 만들어서 사용하기
