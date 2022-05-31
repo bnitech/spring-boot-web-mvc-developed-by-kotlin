@@ -1,0 +1,5 @@
+### PUT Put Mapping
+PUT http://localhost:8080/api/put-mapping
+
+### PUT Rquest Mappping
+PUT http://localhost:8080/api/request-mapping
