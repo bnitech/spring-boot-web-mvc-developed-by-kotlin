@@ -13,14 +13,14 @@ class ResponseApiController {
     @GetMapping
     fun getMapping(@RequestParam age: Int?): ResponseEntity<String> {
 
-        if(age == null){
+        return age?.let {
+            if (age < 20) {
+                return ResponseEntity.status(400).body("age 값은 20보다 커야합니다.")
+            }
+
+            ResponseEntity.ok("OK")
+        } ?: kotlin.run {
             return ResponseEntity.status(400).body("age 값이 누락되었습니다.")
         }
-
-        if(age <20){
-            return ResponseEntity.status(400).body("age 값은 20보다 커야합니다.")
-        }
-
-        return ResponseEntity.ok("OK")
     }
 }
