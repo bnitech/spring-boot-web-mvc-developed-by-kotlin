@@ -1,2 +1,2 @@
 ### Response Entity
-GET http://localhost:8080/api/response
+GET http://localhost:8080/api/response?age=10
