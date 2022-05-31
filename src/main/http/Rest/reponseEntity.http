@@ -1,2 +1,14 @@
-### Response Entity
+### GET Response Entity
 GET http://localhost:8080/api/response?age=10
+
+### POST Response Entity
+POST http://localhost:8080/api/response
+Content-Type: application/json
+
+{
+  "name": "steve",
+  "age": 22,
+  "email": "steve@gmail.com",
+  "address": "경기도 성남시",
+  "phone_number": "010-1234-1234"
+}

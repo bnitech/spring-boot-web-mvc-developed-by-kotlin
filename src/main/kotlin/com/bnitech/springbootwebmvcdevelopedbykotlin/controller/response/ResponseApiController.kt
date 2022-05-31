@@ -1,10 +1,8 @@
 package com.bnitech.springbootwebmvcdevelopedbykotlin.controller.response
 
+import com.bnitech.springbootwebmvcdevelopedbykotlin.model.http.UserRequest
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RequestParam
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api/response")
@@ -22,5 +20,10 @@ class ResponseApiController {
         } ?: kotlin.run {
             return ResponseEntity.status(400).body("age 값이 누락되었습니다.")
         }
+    }
+
+    @PostMapping
+    fun postMapping(@RequestBody userRequest: UserRequest?): ResponseEntity<Any> {
+        return ResponseEntity.status(200).body(userRequest)
     }
 }
